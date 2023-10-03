@@ -18,6 +18,7 @@
    bash: cd: no.txt: Not a directory
    ```
 ---
+
 # ls
 1. When I used the ls command without any arguments, it showed me the contents of the directory that I was in which is not an error.
    ```
@@ -41,5 +42,27 @@
    [user@sahara ~/lecture1]$ cd messages
    [user@sahara ~/lecture1/messages]$ ls no.txt
    no.txt
+   ```
+---
+
+# cat
+1. When I used the cat command without any arguments, nothing appeared after the command. This probably is an error because the cat command reads and prints out the data of a file, which we need to specify
+   ```
+   [user@sahara ~]$ cat
+
+   ```
+2. When I used the cat command with a directory as the argument, it outputted that the directory "Is a directory". This is not an error
+   ```
+   [user@sahara ~]$ cat lecture1
+   cat: lecture: Is a directory
+   ```
+3. When I used the cat command with a file as the argument, it outputted the data in the file. This is not an error. The directory has to have the file in it.
+   ```
+   [user@sahara ~]$ cat lecture1/messages
+   [user@sahara ~/lecture1/messages]$ cat no.txt
+   Hei Verden!
+   [user@sahara ~/lecture1/messages]$ cd ..
+    [user@sahara ~/lecture1]$ cat no.txt
+   cat: no.txt: No such file or directory
    ```
 ---
