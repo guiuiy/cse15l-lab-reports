@@ -1,6 +1,6 @@
 ## Lab Report 1
 ---
-#cd
+# cd
 1. When I used the cd command without any arguments, it kept me in the same directory I was in.
    ```
    [user@sahara ~]$ cd
