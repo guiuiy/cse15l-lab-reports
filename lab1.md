@@ -50,7 +50,6 @@
 1. When I used the cat command without any arguments, nothing appeared after the command. This probably is an error because the cat command reads and prints out the data of a file, which we need to specify
    ```
    [user@sahara ~]$ cat
-
    ```
 2. When I used the cat command with a directory as the argument, it outputted that the directory "Is a directory". This is not an error
    ```
