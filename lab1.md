@@ -1,6 +1,6 @@
-## Lab Report 1
+# Lab Report 1
 ---
-# cd
+## cd
 1. When I used the cd command without any arguments, it kept me in the same directory I was in which was not an error.
    ```
    [user@sahara ~]$ cd
@@ -18,7 +18,7 @@
    ```
 ---
 
-# ls
+## ls
 1. When I used the ls command without any arguments, it showed me the contents of the directory that I was in which is not an error.
    ```
    [user@sahara ~]$ ls
@@ -46,7 +46,7 @@
    ```
 ---
 
-# cat
+## cat
 1. When I used the cat command without any arguments, nothing appeared after the command. This probably is an error because the cat command reads and prints out the data of a file, which we need to specify
    ```
    [user@sahara ~]$ cat
