@@ -8,12 +8,11 @@
    ```
 2. When I used the cd command with a directory as the argument, it brought me into the directory that I specified which was not an error.
    ```
-   [user@sahara ~]$ cd lecture1
-   [user@sahara ~/lecture1]$
+   [user@sahara ~]$ cd lecture1/messages
+   [user@sahara ~/lecture1/messages]$
    ```
 3. When I used the cd command with a file as the argument, the terminal gave an error that said the file was not a directory.
    ```
-   [user@sahara ~/lecture1]$ cd messages
    [user@sahara ~/lecture1/messages]$ cd no.txt
    bash: cd: no.txt: Not a directory
    ```
@@ -25,20 +24,22 @@
    [user@sahara ~]$ ls
    **lecture1**
    ```
-2. When I used the ls command with a directory as the argument, it showed me the contents of the directory that I specified only if the directory was inside the directory I was in. If the directory was not, it gave me an error.
+2. When I used the ls command with a directory as the argument, it showed me the contents of the directory that I specified only if the directory was inside the directory I was in. If the directory was not, I needed to give it a proper relative path or it would give me an error.
    ```
    [user@sahara ~]$ ls lecture1
    Hello.class  Hello.java  **messages**  README
    [user@sahara ~]$ ls messages
    ls: cannot access 'messages': No such file or directory
-   [user@sahara ~]$ cd lecture1
-   [user@sahara ~/lecture1]$ ls messages
+   [user@sahara ~]$ ls lecture1/messages
    en-us.txt  es-mx.txt  no.txt  zh-cn.txt
    ```
-3. When I used the ls command with a file as the argument, it showed me the name of the file of the file that I specified only if the file was inside the directory I was in. If the file was not, it gave me an error.
+3. When I used the ls command with a file as the argument, it showed me the relative path I passed that I specified only if the file was inside the directory I was in. If the file was not, I needed to give it a proper relative path or it would give me an error.
    ```
+   [user@sahara ~]$ cd lecture1
    [user@sahara ~/lecture1]$ ls no.txt
    ls: cannot access 'no.txt': No such file or directory
+   [user@sahara ~/lecture1]$ ls messages/no.txt
+   messages/no.txt
    [user@sahara ~/lecture1]$ cd messages
    [user@sahara ~/lecture1/messages]$ ls no.txt
    no.txt
@@ -54,15 +55,15 @@
 2. When I used the cat command with a directory as the argument, it outputted that the directory "Is a directory". This is not an error
    ```
    [user@sahara ~]$ cat lecture1
-   cat: lecture: Is a directory
+   cat: lecture1: Is a directory
+   [user@sahara ~]$ cat lecture1/messages
+   cat: lecture1/messages: Is a directory
    ```
 3. When I used the cat command with a file as the argument, it outputted the data in the file. This is not an error. The directory has to have the file in it.
    ```
-   [user@sahara ~]$ cat lecture1/messages
-   [user@sahara ~/lecture1/messages]$ cat no.txt
+   [user@sahara ~]$ cat lecture1/messages/no.txt
    Hei Verden!
-   [user@sahara ~/lecture1/messages]$ cd ..
-    [user@sahara ~/lecture1]$ cat no.txt
+   [user@sahara ~]$ cat no.txt
    cat: no.txt: No such file or directory
    ```
 ---
