@@ -1,30 +1,49 @@
 # Lab Report 1
 ---
 ## cd
-1. When I used the `cd` command without any arguments, if I was in the `/home` directory, it kept me in the same directory, but if I was in another directory other than `/home`, I would go to `/home`.
+1. When I used the `cd` command without any arguments, if I was in the home directory, it kept me in the same directory, but if I was in another directory other than home, I would go to home. Not an error.
+   
+   Working directory: /home
    ```
    [user@sahara ~]$ cd
    [user@sahara ~]$
+   ```
 
+   Working directory: /home/lecture1
+   ```
    [user@sahara ~/lecture1]$ cd
    [user@sahara ~]$
+   ```
 
+   Working directory /home/lecture1/messages
+   ```
    [user@sahara ~/lecture1/messages]$ cd
    [user@sahara ~]$
-   
    ```
+   
 2. When I used the `cd` command with a relative path or an absolutepath as the argument, it brought me into the directory that I specified which was not an error.
+
+   Working directory: /home
    ```
    [user@sahara ~]$ cd lecture1/messages
    [user@sahara ~/lecture1/messages]$
-
+   ```
+   
+   Working directory: /home/lecture1
+   ```
    [user@sahara ~/lecture1]$ cd messages
    [user@sahara ~/lecture1/messages]$
+   ```
 
+   Working directory: /home
+   ```
    [user@sahara ~]$ cd /home/lecture1/messages
    [user@sahara ~/lecture1/messages]$
    ```
+   
 3. When I used the `cd` command with a file as the argument, the terminal said the file was not a directory which is not an error.
+
+   Working directory: /home/lecture1/messages
    ```
    [user@sahara ~/lecture1/messages]$ cd no.txt
    bash: cd: no.txt: Not a directory
@@ -32,12 +51,12 @@
 ---
 
 ## ls
-1. When I used the ls command without any arguments, it showed me the contents of the directory that I was in which is not an error.
+1. When I used the `ls` command without any arguments, it showed me the contents of the directory that I was in which is not an error.
    ```
    [user@sahara ~]$ ls
    **lecture1**
    ```
-2. When I used the ls command with a directory as the argument, it showed me the contents of the directory that I specified only if the directory was inside the directory I was in. If the directory was not, I needed to give it a proper relative path or it would give me an error.
+2. When I used the `ls` command with a directory as the argument, it showed me the contents of the directory that I specified only if the directory was inside the directory I was in. If the directory was not, I needed to give it a proper relative path or it would give me an error.
    ```
    [user@sahara ~]$ ls lecture1
    Hello.class  Hello.java  **messages**  README
@@ -46,7 +65,7 @@
    [user@sahara ~]$ ls lecture1/messages
    en-us.txt  es-mx.txt  no.txt  zh-cn.txt
    ```
-3. When I used the ls command with a file as the argument, it showed me the relative path I passed that I specified only if the file was inside the directory I was in. If the file was not, I needed to give it a proper relative path or it would give me an error.
+3. When I used the `ls` command with a file as the argument, it showed me the relative path I passed that I specified only if the file was inside the directory I was in. If the file was not, I needed to give it a proper relative path or it would give me an error.
    ```
    [user@sahara ~]$ cd lecture1
    [user@sahara ~/lecture1]$ ls no.txt
@@ -60,18 +79,18 @@
 ---
 
 ## cat
-1. When I used the cat command without any arguments, nothing appeared after the command. This probably is an error because the cat command reads and prints out the data of a file, which we need to specify
+1. When I used the `cat` command without any arguments, nothing appeared after the command. This probably is an error because the cat command reads and prints out the data of a file, which we need to specify
    ```
    [user@sahara ~]$ cat
    ```
-2. When I used the cat command with a directory as the argument, it outputted that the directory "Is a directory". This is not an error
+2. When I used the `cat` command with a directory as the argument, it outputted that the directory "Is a directory". This is not an error
    ```
    [user@sahara ~]$ cat lecture1
    cat: lecture1: Is a directory
    [user@sahara ~]$ cat lecture1/messages
    cat: lecture1/messages: Is a directory
    ```
-3. When I used the cat command with a file as the argument, it outputted the data in the file. This is not an error. The directory has to have the file in it.
+3. When I used the `cat` command with a file as the argument, it outputted the data in the file. This is not an error. The directory has to have the file in it.
    ```
    [user@sahara ~]$ cat lecture1/messages/no.txt
    Hei Verden!
