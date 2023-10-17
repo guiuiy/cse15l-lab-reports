@@ -87,11 +87,15 @@
 ---
 
 ## cat
-1. When I used the `cat` command without any arguments, nothing appeared after the command. This probably is an error because the cat command reads and prints out the data of a file, which we need to specify
+1. When I used the `cat` command without any arguments, nothing appeared after the command. Providing input would repeat the input in the next line. This may or may not be an error.
 
       Working directory: /home
       ```
       [user@sahara ~]$ cat
+      aa
+      aa
+      hello
+      hello
       ```
 3. When I used the `cat` command with a directory as the argument, it outputted that the directory "Is a directory". This is not an error
 
