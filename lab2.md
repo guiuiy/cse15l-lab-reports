@@ -42,5 +42,7 @@ class StringServer {
 }
 ```
 ![Image](cse_15l_lab_images/LabReport2Part1Img1.png)
+The handleRequest method is being called and the argument it is taking in is the URL of the server. From the URL, the method is checking the path and query. If the path is `/add-message`, then the method will look at the query and take the string part of after the = and set it to `s`. There is also the `index` field that will increment everytime we "add a message", or everytime we have the add-message path. In this case, it increments from 0 to 1. At the end, it will concatenate `index` and `s` and skip a line onto the `string` field, which was originally empy, where we now have what is returned in the image
 
-![Image](cse_15l_lab_images/LabReport2Part1Img2.png)
+![Image](cse_15l_lab_images/LapReport2Part1Img2.png)
+The handleRequest method is being called and the argument it is taking in is the URL of the server. From the URL, the method is checking the path and query. If the path is `/add-message`, then the method will look at the query and take the string part of after the = and set it to `s`. There is also the `index` field that will increment everytime we "add a message", or everytime we have the add-message path. In this case, it increments from 1 to 2. At the end, it will concatenate `index` and `s` and skip a line onto the `string` field, which had only "1. wassup", where we now have what is returned in the image
