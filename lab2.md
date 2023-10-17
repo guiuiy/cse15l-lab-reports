@@ -41,6 +41,6 @@ class StringServer {
     }
 }
 ```
-![Image](cse_15l_lab_images/LabReport2Img1.png)
+![Image](cse_15l_lab_images/LabReport2Part1Img1.png)
 
-![Image](cse_15l_lab_images/LabReport2Img2.png)
+![Image](cse_15l_lab_images/LabReport2Part1Img2.png)
