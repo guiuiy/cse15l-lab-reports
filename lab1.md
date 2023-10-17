@@ -1,7 +1,7 @@
 # Lab Report 1
 ---
 ## cd
-1. When I used the 'cd' command without any arguments, if I was in the '/home' directory, it kept me in the same directory, but if I was in another directory other than '/home', I would go to '/home'.
+1. When I used the `cd` command without any arguments, if I was in the `/home` directory, it kept me in the same directory, but if I was in another directory other than `/home`, I would go to `/home`.
    ```
    [user@sahara ~]$ cd
    [user@sahara ~]$
@@ -13,7 +13,7 @@
    [user@sahara ~]$
    
    ```
-2. When I used the 'cd' command with a relative path or an absolutepath as the argument, it brought me into the directory that I specified which was not an error.
+2. When I used the `cd` command with a relative path or an absolutepath as the argument, it brought me into the directory that I specified which was not an error.
    ```
    [user@sahara ~]$ cd lecture1/messages
    [user@sahara ~/lecture1/messages]$
@@ -24,7 +24,7 @@
    [user@sahara ~]$ cd /home/lecture1/messages
    [user@sahara ~/lecture1/messages]$
    ```
-3. When I used the 'cd' command with a file as the argument, the terminal gave an error that said the file was not a directory.
+3. When I used the `cd` command with a file as the argument, the terminal said the file was not a directory which is not an error.
    ```
    [user@sahara ~/lecture1/messages]$ cd no.txt
    bash: cd: no.txt: Not a directory
