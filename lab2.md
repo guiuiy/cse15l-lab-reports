@@ -56,3 +56,7 @@ The handleRequest method is being called and the argument it is taking in is the
 ![Image](cse_15l_lab_images/LabReport2Part2Img2.png)
 
 ![Image](cse_15l_lab_images/LabReport2Part2Img3.png)
+
+---
+## Part 3
+Everything that was mentioned in labs 2 and 3 was all new to me. The most interesting thing though was the `ssh` command and logging into remote servers. I didn't know that you could access another computer from your terminal using `ssh` with your account info and a password. I thought that that was pretty cool and really useful. It is kind of a pain to have to do everything on the remote server on your terminal, but its still really neat that you can do that. I also really enjoyed learning how to set up a web server. I can see many uses for it and I could even make it do more than just keep a list of strings and increment numbers if I learn more about it.
