@@ -1,7 +1,7 @@
 # Lab Report 2
 ---
 ## Part 1: 
-String Server Code:
+StringServer Code:
 ```
 import java.io.IOException;
 import java.net.URI;
