@@ -89,7 +89,7 @@
 ## cat
 1. When I used the `cat` command without any arguments, nothing appeared after the command. Providing input would repeat the input in the next line. This may or may not be an error.
 
-      Working directory: `/home``
+      Working directory: `/home`
       ```
       [user@sahara ~]$ cat
       aa
