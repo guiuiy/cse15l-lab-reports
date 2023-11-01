@@ -75,6 +75,7 @@ The fix was to move the `n.next - new Node(value, null);` statement outside the 
 ## Part 2: 
 
 `grep -v`
+
 For `-v` in addition with `grep`, it output the lines that DID NOT have the given argument and this is useful if we want to look for lines without certain keywords or phrases in them.
 ```
 bblu2@bluLT MINGW64 ~/OneDrive/Documents/GitHub/docsearch (main)
@@ -124,6 +125,7 @@ grep: technical/government/About_LSC: Is a directory
 
 
 `grep -L`
+
 For `-L` in addition with `grep`, it output names of the files that DID NOT have the given argument in them and this is useful if we want to look for files without certain keywords or phrases in them.
 ```
 bblu2@bluLT MINGW64 ~/OneDrive/Documents/GitHub/docsearch (main)
@@ -147,6 +149,7 @@ technical/government/About_LSC/State_Planning_Special_Report.txt
 
 
 `grep -c`
+
 For `-c` in addition with `grep`, it outputs the number of lines that had the given argument in them and this is useful if we want to look for how many lines have the certain keyword or phrase in them.
 ```
 bblu2@bluLT MINGW64 ~/OneDrive/Documents/GitHub/docsearch (main)
@@ -182,6 +185,7 @@ technical/biomed/rr74.txt:0
 
 
 `grep -n`
+
 For `-n` in addition with `grep`, it outputs the line that has the keyword or phrase in it along with the line number, and this is useful if we want to know which lines contain the certain keyword or phrase.
 ```
 bblu2@bluLT MINGW64 ~/OneDrive/Documents/GitHub/docsearch (main)
