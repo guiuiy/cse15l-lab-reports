@@ -2,6 +2,7 @@
 ---
 ## Part 1: 
 LinkedList Append Bug:
+
 Failure-Inducing Input:
 ```
 @Test
@@ -24,4 +25,48 @@ Non-Failure-Producing Input:
     }
 ```
 Symptoms:
+
+![Image](cse_15l_lab_images/LabReport3Part1Img1.png)
+
+Bug:
+
+Before:
+```
+public void append(int value) {
+        if(this.root == null) {
+            this.root = new Node(value, null);
+            return;
+        }
+        // If it's just one element, add if after that one
+        Node n = this.root;
+        if(n.next == null) {
+            n.next = new Node(value, null);
+            return;
+        }
+        // Otherwise, loop until the end and add at the end with a null
+        while(n.next != null) {
+            n = n.next;
+            n.next = new Node(value, null);
+        }
+    }
+```
+After:
+```
+    public void append(int value) {
+        if(this.root == null) {
+            this.root = new Node(value, null);
+            return;
+        }
+        // If it's just one element, add if after that one
+        Node n = this.root;
+        if(n.next == null) {
+            n.next = new Node(value, null);
+            return;
+        }
+        // Otherwise, loop until the end and add at the end with a null
+        while(n.next != null) {
+            n = n.next;
+        }
+        n.next = new Node(value, null);
+    }
 ```
