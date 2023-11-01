@@ -120,9 +120,9 @@ bblu2@bluLT MINGW64 ~/OneDrive/Documents/GitHub/docsearch (main)
 $ grep -v 'a' technical/government/About_LSC
 grep: technical/government/About_LSC: Is a directory
 ```
-
 For `-v` in addition with `grep`, it output the lines that DID NOT have the given argument and this is useful if we want to look for lines without certain keywords or phrases in them.
----
+
+
 `grep -L`
 ```
 bblu2@bluLT MINGW64 ~/OneDrive/Documents/GitHub/docsearch (main)
@@ -145,7 +145,8 @@ technical/government/About_LSC/State_Planning_Special_Report.txt
 ```
 
 For `-L` in addition with `grep`, it output names of the files that DID NOT have the given argument in them and this is useful if we want to look for files without certain keywords or phrases in them.
----
+
+
 `grep -c`
 ```
 bblu2@bluLT MINGW64 ~/OneDrive/Documents/GitHub/docsearch (main)
@@ -180,7 +181,8 @@ technical/biomed/rr74.txt:0
 ```
 
 For `-c` in addition with `grep`, it outputs the number of lines that had the given argument in them and this is useful if we want to look for how many lines have the certain keyword or phrase in them.
----
+
+
 `grep -n`
 ```
 bblu2@bluLT MINGW64 ~/OneDrive/Documents/GitHub/docsearch (main)
@@ -235,10 +237,10 @@ grep: technical/government/About_LSC: Is a directory
 ```
 
 For `-n` in addition with `grep`, it outputs the line that has the keyword or phrase in it along with the line number, and this is useful if we want to know which lines contain the certain keyword or phrase.
----
+
 
 For all command options, I learned them from: [Link](https://www.oreilly.com/library/view/macintosh-terminal-pocket/9781449328962/re39.html)
----
+
 
 [HOME](https://guiuiy.github.io/cse15l-lab-reports/)
 
