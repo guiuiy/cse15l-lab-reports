@@ -75,6 +75,7 @@ The fix was to move the `n.next - new Node(value, null);` statement outside the 
 ## Part 2: 
 
 `grep -v`
+For `-v` in addition with `grep`, it output the lines that DID NOT have the given argument and this is useful if we want to look for lines without certain keywords or phrases in them.
 ```
 bblu2@bluLT MINGW64 ~/OneDrive/Documents/GitHub/docsearch (main)
 $ grep -v 'a' technical/911report/chapter-2.txt
@@ -120,10 +121,10 @@ bblu2@bluLT MINGW64 ~/OneDrive/Documents/GitHub/docsearch (main)
 $ grep -v 'a' technical/government/About_LSC
 grep: technical/government/About_LSC: Is a directory
 ```
-For `-v` in addition with `grep`, it output the lines that DID NOT have the given argument and this is useful if we want to look for lines without certain keywords or phrases in them.
 
 
 `grep -L`
+For `-L` in addition with `grep`, it output names of the files that DID NOT have the given argument in them and this is useful if we want to look for files without certain keywords or phrases in them.
 ```
 bblu2@bluLT MINGW64 ~/OneDrive/Documents/GitHub/docsearch (main)
 $ grep -L 'z' technical/biomed/*.txt
@@ -144,10 +145,9 @@ technical/government/About_LSC/Special_report_to_congress.txt
 technical/government/About_LSC/State_Planning_Special_Report.txt
 ```
 
-For `-L` in addition with `grep`, it output names of the files that DID NOT have the given argument in them and this is useful if we want to look for files without certain keywords or phrases in them.
-
 
 `grep -c`
+For `-c` in addition with `grep`, it outputs the number of lines that had the given argument in them and this is useful if we want to look for how many lines have the certain keyword or phrase in them.
 ```
 bblu2@bluLT MINGW64 ~/OneDrive/Documents/GitHub/docsearch (main)
 $ grep -c 'you' technical/government/About_LSC/ONTARIO_LEGAL_AID_SERIES.txt
@@ -180,10 +180,9 @@ technical/biomed/rr73.txt:0
 technical/biomed/rr74.txt:0
 ```
 
-For `-c` in addition with `grep`, it outputs the number of lines that had the given argument in them and this is useful if we want to look for how many lines have the certain keyword or phrase in them.
-
 
 `grep -n`
+For `-n` in addition with `grep`, it outputs the line that has the keyword or phrase in it along with the line number, and this is useful if we want to know which lines contain the certain keyword or phrase.
 ```
 bblu2@bluLT MINGW64 ~/OneDrive/Documents/GitHub/docsearch (main)
 $ grep -n 'you' technical/government/About_LSC/ONTARIO_LEGAL_AID_SERIES.txt
@@ -235,8 +234,6 @@ bblu2@bluLT MINGW64 ~/OneDrive/Documents/GitHub/docsearch (main)
 $ grep -n 'you' technical/government/About_LSC
 grep: technical/government/About_LSC: Is a directory
 ```
-
-For `-n` in addition with `grep`, it outputs the line that has the keyword or phrase in it along with the line number, and this is useful if we want to know which lines contain the certain keyword or phrase.
 
 
 For all command options, I learned them from: [Link](https://www.oreilly.com/library/view/macintosh-terminal-pocket/9781449328962/re39.html)
