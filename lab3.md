@@ -73,6 +73,7 @@ After:
 The fix was to move the `n.next - new Node(value, null);` statement outside the while loop. When it was inside the while loop, as we iterate through the list, we would keep on adding onto the list, so we would never reach the end. Moving the statement outside the loop would make it so that we would only add onto the list once we reach the end and stop iterating.
 
 ## Part 2: 
+
 `grep -v`
 ```
 bblu2@bluLT MINGW64 ~/OneDrive/Documents/GitHub/docsearch (main)
