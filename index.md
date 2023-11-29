@@ -11,7 +11,7 @@ Yallow !!! Welcome to my Lab Reports page using Markdown and GitHub. Have fun ig
 ---
 ## [Lab Report #4](https://guiuiy.github.io/cse15l-lab-reports/lab4.html)
 ---
-## [Lab Report #4](https://guiuiy.github.io/cse15l-lab-reports/lab5.html)
+## [Lab Report #5](https://guiuiy.github.io/cse15l-lab-reports/lab5.html)
 ---
 ![Image](cse_15l_lab_images/compSciCat1.jpg)
 ---
